@@ -10,3 +10,6 @@
 //= require admin/spree_backend
 
 //= require_tree .
+//= require admin/spree_fancy
+//= require admin/spree_multi_seller
+//= require admin/spree_drop_ship
