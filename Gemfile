@@ -46,3 +46,10 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-0-stable'
 gem 'spree_multi_seller', :git => 'https://github.com/alexandrule/spree_multi_seller', :branch => 'master'
 gem 'spree_drop_ship', github: 'alexandrule/spree_drop_ship', :branch => 'master'
+
+gem "deface", "~> 0.9.1"
+
+group :development do
+  gem 'better_errors'
+  gem 'thin'
+end
