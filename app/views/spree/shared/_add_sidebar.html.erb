@@ -1,5 +1,16 @@
-<% content_for :sidebar do %>
+<aside id="sidebar" class="columns four" data-hook="">
   <div data-hook="homepage_sidebar_navigation">
-      <%= render :partial => 'spree/shared/taxonomies' %>
+    <nav id="taxonomies" class="sidebar-item" data-hook>
+      <% get_taxonomies.each do |taxonomy| %>
+        <% if taxonomy.root.children.any? %>
+          <div class="menu">
+            <h6 class='taxonomy-root'>
+              <%= Spree.t(:shop_by_taxonomy, :taxonomy =>taxonomy.name) %></h6>
+            <%= taxons_tree(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
+          </div>
+            <p></p>
+        <% end %>
+      <% end %>
+    </nav>
   </div>
-<% end %>
+</aside>
