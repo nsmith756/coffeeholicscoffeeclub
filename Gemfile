@@ -51,5 +51,4 @@ gem "deface", "~> 0.9.1"
 
 group :development do
   gem 'better_errors'
-  gem 'thin'
 end
