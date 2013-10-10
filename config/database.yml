@@ -20,8 +20,10 @@ production:
   password: 4959444b
 
 staging:
-  adapter: mysql2
-  database: heroku_fd253a4a0e46e1f
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: d7vt3jsbnq1dhn
   pool: 5
-  username: b291e924fbd322
-  password: c3182c6f
+  username: dzbcxtuxssikka
+  password: l0idV4LIKfu-mwHKCjBTmV0tDh
