@@ -50,7 +50,8 @@ gem 'spree_drop_ship', github: 'alexandrule/spree_drop_ship', :branch => 'master
 
 gem "deface", "~> 0.9.1"
 
+gem 'thin'
+
 group :development do
   gem 'better_errors'
-  gem 'thin'
 end
