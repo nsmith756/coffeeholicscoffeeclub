@@ -78,14 +78,6 @@ GIT
       spree_core (~> 2.0.0)
 
 GIT
-  remote: https://github.com/alexandrule/spree_multi_seller
-  revision: 8c97dc44454dddf20949cd4c12795bfd1ebd75fb
-  branch: master
-  specs:
-    spree_multi_seller (2.0.0)
-      spree_core (~> 2.0.0)
-
-GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
   branch: 2-0-stable
@@ -347,5 +339,4 @@ DEPENDENCIES
   spree_drop_ship!
   spree_fancy!
   spree_gateway!
-  spree_multi_seller!
   uglifier (>= 1.0.3)
