@@ -11,5 +11,4 @@
 
 //= require_tree .
 //= require store/spree_fancy
-//= require store/spree_multi_seller
 //= require store/spree_drop_ship
