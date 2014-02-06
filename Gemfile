@@ -39,11 +39,12 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'spree', github: 'spree/spree', branch: '2-0-stable'
-gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-0-stable'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-0-stable'
+gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '2-0-stable'
+gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'
 
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-0-stable'
-gem 'spree_multi_seller', :git => 'https://github.com/alexandrule/spree_multi_seller', :branch => 'master'
+gem 'spree_multi_seller', :github => 'alexandrule/spree_multi_seller', :branch => 'master'
+
 gem 'spree_drop_ship', github: 'alexandrule/spree_drop_ship', :branch => 'master'
 
 gem "deface", "~> 0.9.1"

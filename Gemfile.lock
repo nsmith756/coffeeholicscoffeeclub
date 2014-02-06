@@ -11,6 +11,14 @@ GIT
       spree_core (>= 2.0.3)
 
 GIT
+  remote: git://github.com/alexandrule/spree_multi_seller.git
+  revision: fc895643a6c449f5143d8799d5b17a887734d076
+  branch: master
+  specs:
+    spree_multi_seller (2.0.0)
+      spree_core (~> 2.0.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 2b5c59c798827820914d1a29f2ff3e2029ad08b0
   branch: 2-0-stable
@@ -68,6 +76,18 @@ GIT
       spree_core (= 2.0.5.beta)
 
 GIT
+  remote: git://github.com/spree/spree_auth_devise.git
+  revision: 3224869cfda188f8d7fc4f1eb630d862cd585bea
+  branch: 2-0-stable
+  specs:
+    spree_auth_devise (2.0.0)
+      devise (~> 2.2.5)
+      devise-encryptable (= 0.1.2)
+      spree_backend (~> 2.0.0)
+      spree_core (~> 2.0.0)
+      spree_frontend (~> 2.0.0)
+
+GIT
   remote: git://github.com/spree/spree_fancy.git
   revision: addb377b8aea336db49899654b3dd0faeb09b960
   branch: 2-0-stable
@@ -78,29 +98,8 @@ GIT
       spree_core (~> 2.0.0)
 
 GIT
-  remote: https://github.com/alexandrule/spree_multi_seller
-  revision: 5500819c5d21d1292d7dc0a2fa4e1f2c7d9a47aa
-  branch: master
-  specs:
-    spree_multi_seller (2.0.0)
-      spree_core (~> 2.0.0)
-
-GIT
-  remote: https://github.com/spree/spree_auth_devise.git
-  revision: 29826d93235b9486ba2bd7b164e0af5423495a2c
-  branch: 2-0-stable
-  specs:
-    spree_auth_devise (2.0.0)
-      cancan (~> 1.6.7)
-      devise (~> 2.2.5)
-      devise-encryptable (= 0.1.2)
-      spree_backend (~> 2.0.0)
-      spree_core (~> 2.0.0)
-      spree_frontend (~> 2.0.0)
-
-GIT
-  remote: https://github.com/spree/spree_gateway.git
-  revision: 47b874c8fc554c9d33318df7fcc8d8f0e7e7d6a8
+  remote: git://github.com/spree/spree_gateway.git
+  revision: b0cb8902fee6a94cd0d91d11eb7d154b91502d8b
   branch: 2-0-stable
   specs:
     spree_gateway (2.1.0.beta)
@@ -150,9 +149,9 @@ GEM
       multi_json (~> 1.0)
     acts_as_list (0.2.0)
       activerecord (>= 3.0)
-    akami (1.2.0)
+    akami (1.2.1)
       gyoku (>= 0.4.0)
-      nokogiri (>= 1.4.0)
+      nokogiri
     arel (3.0.2)
     awesome_nested_set (2.1.5)
       activerecord (>= 3.0.0)
@@ -160,7 +159,7 @@ GEM
       json (~> 1.4)
       nokogiri (< 1.6.0)
       uuidtools (~> 2.1)
-    bcrypt-ruby (3.1.1)
+    bcrypt-ruby (3.1.2)
     better_errors (1.0.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -190,7 +189,7 @@ GEM
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
-    devise (2.2.6)
+    devise (2.2.8)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
@@ -243,7 +242,7 @@ GEM
     multi_xml (0.5.5)
     nokogiri (1.5.10)
     nori (1.1.5)
-    orm_adapter (0.4.0)
+    orm_adapter (0.5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
