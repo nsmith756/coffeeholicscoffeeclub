@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: chcc_development
+  pool: 5
+  username: postgres
+  password: postgres
+
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: chcc_test
+  pool: 5
+  username: postgres
+  password: postgres
+
+production:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: chcc_test
+  pool: 5
+  username: postgres
+  password: postgres
