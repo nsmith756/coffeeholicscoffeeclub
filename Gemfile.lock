@@ -79,7 +79,7 @@ GIT
 
 GIT
   remote: https://github.com/alexandrule/spree_multi_seller
-  revision: 7fb085a45e0e94294cd1c4845bfb346fee931853
+  revision: 5500819c5d21d1292d7dc0a2fa4e1f2c7d9a47aa
   branch: master
   specs:
     spree_multi_seller (2.0.0)
