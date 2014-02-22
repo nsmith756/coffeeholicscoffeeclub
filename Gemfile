@@ -45,6 +45,8 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-s
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-0-stable'
 gem 'spree_multi_seller', :github => 'alexandrule/spree_multi_seller', :branch => 'master'
 
+# gem 'spree_multi_seller', :path => '/home/alex/work/spree_multi_seller'
+
 gem 'spree_drop_ship', github: 'alexandrule/spree_drop_ship', :branch => 'master'
 
 gem "deface", "~> 0.9.1"
