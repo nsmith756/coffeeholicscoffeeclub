@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130820144013) do
+ActiveRecord::Schema.define(:version => 20140324075014) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -225,13 +225,6 @@ ActiveRecord::Schema.define(:version => 20130820144013) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "spree_mail_methods", :force => true do |t|
-    t.string   "environment"
-    t.boolean  "active",      :default => true
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-  end
-
   create_table "spree_new_adjustments", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -268,7 +261,7 @@ ActiveRecord::Schema.define(:version => 20130820144013) do
   add_index "spree_option_values_variants", ["variant_id"], :name => "index_spree_option_values_variants_on_variant_id"
 
   create_table "spree_orders", :force => true do |t|
-    t.string   "number",               :limit => 15
+    t.string   "number",               :limit => 32
     t.decimal  "item_total",                         :precision => 10, :scale => 2, :default => 0.0, :null => false
     t.decimal  "total",                              :precision => 10, :scale => 2, :default => 0.0, :null => false
     t.string   "state"
@@ -555,6 +548,7 @@ ActiveRecord::Schema.define(:version => 20130820144013) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "tracking_url"
+    t.string   "admin_name"
   end
 
   create_table "spree_shipping_methods_zones", :id => false, :force => true do |t|
@@ -629,6 +623,7 @@ ActiveRecord::Schema.define(:version => 20130820144013) do
     t.boolean  "backorderable_default",  :default => false
     t.boolean  "propagate_all_variants", :default => true
     t.integer  "supplier_id"
+    t.string   "admin_name"
   end
 
   add_index "spree_stock_locations", ["supplier_id"], :name => "index_spree_stock_locations_on_supplier_id"
@@ -809,8 +804,8 @@ ActiveRecord::Schema.define(:version => 20130820144013) do
     t.boolean  "is_master",                                   :default => false
     t.integer  "product_id"
     t.decimal  "cost_price",    :precision => 8, :scale => 2
-    t.string   "cost_currency"
     t.integer  "position"
+    t.string   "cost_currency"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
